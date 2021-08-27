@@ -1,0 +1,95 @@
+.App {
+  /* background: #16222a;
+  background: -webkit-linear-gradient(to right, #3a6073, #16222a);
+  background: linear-gradient(to right, #3a6073, #16222a); */
+
+  /* background: #8360c3;
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  background: linear-gradient(to right, #2ebf91, #8360c3); */
+
+  /* background: #159957;
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  background: linear-gradient(to right, #155799, #159957); */
+
+  /* background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5); */
+  /* 
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+
+  background: #8360c3;
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.react-icons {
+  vertical-align: middle;
+  padding: 5px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.logo {
+  font-size: large;
+  font-family: "URW Chancery L", cursive;
+}
+
+#skills ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#skills li {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  color: #374054;
+  background: #e4e4ea;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+}
