@@ -8,6 +8,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaUniversity } from "react-icons/fa";
 import { GiNewBorn } from "react-icons/gi";
+import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,46 +34,48 @@ const Education = (props) => {
 
   return (
     <Box className={classes.root} id="education">
-      {/* <Paper elevation={3}> */}
-      <Typography variant="h2" className={classes.Typography}>
-        Education
-      </Typography>
-      <VerticalTimeline layout={"2-columns"} animate={false}>
-        {education.map((education_record, index) => {
-          return (
-            <VerticalTimelineElement
-              key={index}
-              className="vertical-timeline-element--education"
-              iconStyle={{
-                background: "rgb(233, 30, 99)",
-                color: "#fff",
-              }}
-              icon={<FaUniversity />}
-            >
-              <h3 className="vertical-timeline-element-title">
-                {education_record.Degree}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                {education_record.specialization +
-                  ", " +
-                  education_record.UniversityName}
-              </h4>
-              <p>{education_record.Description}</p>
-              <b
-                className="vertical-timeline-element-date"
-                style={{ fontWeight: 700 }}
+      <Container maxWidth="lg">
+        {/* <Paper elevation={3}> */}
+        <Typography variant="h2" className={classes.Typography}>
+          Education
+        </Typography>
+        <VerticalTimeline layout={"2-columns"} animate={true}>
+          {education.map((education_record, index) => {
+            return (
+              <VerticalTimelineElement
+                key={index}
+                className="vertical-timeline-element--education"
+                iconStyle={{
+                  background: "rgb(233, 30, 99)",
+                  color: "#fff",
+                }}
+                icon={<FaUniversity />}
               >
-                {education_record.Duration}
-              </b>
-            </VerticalTimelineElement>
-          );
-        })}
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<GiNewBorn />}
-        />
-      </VerticalTimeline>
-      {/* </Paper> */}
+                <h3 className="vertical-timeline-element-title">
+                  {education_record.Degree}
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {education_record.specialization +
+                    ", " +
+                    education_record.UniversityName}
+                </h4>
+                <p>{education_record.Description}</p>
+                <b
+                  className="vertical-timeline-element-date"
+                  style={{ fontWeight: 700 }}
+                >
+                  {education_record.Duration}
+                </b>
+              </VerticalTimelineElement>
+            );
+          })}
+          <VerticalTimelineElement
+            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+            icon={<GiNewBorn />}
+          />
+        </VerticalTimeline>
+        {/* </Paper> */}
+      </Container>
     </Box>
   );
 };

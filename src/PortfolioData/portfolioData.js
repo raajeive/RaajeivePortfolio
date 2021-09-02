@@ -3,48 +3,231 @@ let resumeData = {
     imagebaseurl: "https://aditya-bhat.github.io/",
     resume_file_location: "/files/AdityaDeepakBhat_Resume.pdf",
     name: "Aditya D Bhat",
-    role: "R & D Engineer",
+    role: "Software Engineer",
     currentCompany: "Hewlett Packard Enterprise",
     socialLinks: {
       email: "mailto:aditya.deepak.bhat@gmail.com",
-      linkedin: "https://www.linkedin.com/in/aditya-bhat/",
+      linkedin: "https://www.linkedin.com/in/adityabhat24/",
       github: "http://github.com/aditya-bhat",
       instagram: "https://instagram.com/aditya_bhat24",
     },
     aboutDataRotate:
       '["Data Enthusiast.", "Machine Learning!", "Web Developer"]',
     aboutme:
-      "Data Science and Machine Learning Enthusiast, with a Bachelor of \
+      "Hi there 👋, I'm a Data Science and Machine Learning Enthusiast, with a Bachelor of \
       Technology (B.Tech) in Computer Science and Engineering and a\
-      specialization in Data Science from PES University, Bangalore. Currently\
-      working as a Research and Development Engineer at Aruba, Hewlett Packard\
-      Enterprise R&D. Building Intelligent Applications that improve\
-      engineering productivity and Automation.",
+      specialization in Data Science from PES University, Bangalore. I'm Currently\
+      working as a Software Engineer at Aruba - Hewlett Packard\
+      Enterprise R&D, where I'm working on building applications to help the \
+      Network Test Lab gain insights from Stressed Network Test Data.",
     address: "Bangalore, India",
     website: "https://aditya-bhat.github.io",
     interests: "NLP, Machine Learning, Data Mining, Web Technologies",
     getInTouchMessage:
-      "I'm open to opportunities in the area of Machine Learning and NLP! ",
-    skills: [
-      "C/C++",
-      "Python",
-      "JavaScript",
-      "Node.js",
-      "ReactJS",
-      "MongoDB",
-      "Express",
-      "SQL/PostgreSQL",
-      "Apache Spark",
-      "Apache Kafka",
-      "Numpy",
-      "Pandas",
-      "Seaborn/Matplotlib",
-      "TensorFlow",
-      "Keras",
-      "OpenCV",
-      "scaPy",
-      "Librosa",
+      "I'm open to opportunities in the area of Software Development, Data Science, Machine Learning and NLP! ",
+    courses: {
+      // "Graduate (MS CS, ASU)": [],
+      "Undergraduate (B.Tech - CSE, PESU)": [
+        "CS101 - Intro to computing using Python",
+        "CS151 - Problem Solving with C",
+        "CS202 - Data Structures",
+        "CS201 - Digital Design and Computer Organization",
+        "CS203 - Intro to Data Science",
+        "CS204 - Web Technology - I",
+        "CS205 - Discrete Math and Logic",
+        "CS251 - Design and Analysis of Algorithms",
+        "CS252 - Data Base Management Systems",
+        "MA251 - Linear Algebra and its Applications",
+        "CS302 - Introducation to Operating Systems",
+        "CS301 - Computer Networks",
+        "CS322 - Data Analytics (Elective)",
+        "CS314 - Big Data (Elective)",
+        "CS351 - Compiler Design",
+        "CS333 - Natural Language Processing (Elective)",
+        "CS353 - Machine Learning",
+        "CS348 - Digital Image Processing (Elective)",
+        "CS401 - Object Oriented Modelling and Design",
+        "CS401 - Software Engineering",
+        "CS403 - Web Technologies - II",
+        "CS424 - Social Network Analytics (Elective)",
+        "CS434 - Design of Bitcoin and Blockchain Systems (Elective)",
+      ],
+    },
+    "Technical Certifications": [
+      {
+        name: "Natural Language Processing Specialization",
+        org: "deeplearning.ai on Coursera",
+        link:
+          "https://www.coursera.org/specializations/natural-language-processing",
+      },
+      {
+        name: "DeepLearning.AI TensorFlow Developer",
+        org: "deeplearning.ai on Coursera",
+        link: "https://coursera.org/share/4e8d97cc7fe20d0b3d605dd0de4315e6",
+      },
+      {
+        name: "Deep Learning Specialization",
+        org: "deeplearning.ai on Coursera",
+        link: "https://coursera.org/share/5d55107acec1946d473811449a305470",
+      },
     ],
+    achievements: [
+      {
+        award: "CNR Rao Merit Scholarship Award",
+        description:
+          "Received the CNR Rao Merit Scholarship Award in Nov 2018. (Awarded to \
+        top 20% students in the batch at PES University). Received distinction award in all semesters.",
+        org: "PES University",
+        date: "Nov 2018",
+      },
+      {
+        award: "Best Paper/POC Award",
+        description:
+          'Recieved the Best Paper/POC Award for POC titled "Kannada\
+        Kali – Learning Languages Made Easy", 2018 IEEE International \
+        Pre-Conference on Cloud Computing for Emerging Markets.',
+        org: "IEEE CCEM",
+        date: "2018",
+      },
+    ],
+    skills: {
+      "Programming Languages": [
+        {
+          skill: "C/C++",
+          src:
+            "https://img.shields.io/badge/-C++-05122A?style=flat&logo=C%2B%2B&logoColor=00599C",
+        },
+        {
+          skill: "Python",
+          src:
+            "https://img.shields.io/badge/-Python-05122A?style=flat&logo=python",
+        },
+        {
+          skill: "JavaScript",
+          src:
+            "https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript",
+        },
+      ],
+      "Data Science/Machine Learning": [
+        {
+          skill: "Numpy",
+          src:
+            "https://img.shields.io/badge/numpy%20-%23013243.svg?&style=flat&logo=numpy&logoColor=white",
+        },
+        {
+          skill: "Pandas",
+          src:
+            "https://img.shields.io/badge/pandas%20-%23150458.svg?&style=flat&logo=pandas&logoColor=white",
+        },
+        {
+          skill: "Matplotlib",
+          src: "",
+        },
+        {
+          skill: "Seaborn",
+          src: "",
+        },
+        {
+          skill: "OpenCV",
+          src:
+            "https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white",
+        },
+        {
+          skill: "scaPy",
+          src: "",
+        },
+        {
+          skill: "Librosa",
+          src: "",
+        },
+        {
+          skill: "Keras",
+          src:
+            "https://img.shields.io/badge/Keras%20-%23D00000.svg?&style=flat&logo=Keras&logoColor=white",
+        },
+        {
+          skill: "TensorFlow",
+          src:
+            "https://img.shields.io/badge/TensorFlow%20-%23FF6F00.svg?&style=flat&logo=TensorFlow&logoColor=white",
+        },
+        {
+          skill: "PyTorch",
+          src:
+            "https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=flat&logo=PyTorch&logoColor=white",
+        },
+        {
+          skill: "Apache Spark",
+          src:
+            "https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat&logo=apache-spark&logoColor=white",
+          // src: "https://img.shields.io/badge/Apache-Spark-orange",
+        },
+      ],
+      Databases: [
+        {
+          skill: "MongoDB",
+          src:
+            "https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=flat&logo=mongodb&logoColor=white",
+        },
+        {
+          skill: "MySQL",
+          src:
+            "https://img.shields.io/badge/mysql-%2300f.svg?&style=flat&logo=mysql&logoColor=white",
+        },
+        {
+          skill: "PostgreSQL",
+          src:
+            "https://img.shields.io/badge/postgres-%23316192.svg?&style=flat&logo=postgresql&logoColor=white",
+        },
+      ],
+      "Web Technologies": [
+        {
+          skill: "Flask",
+          src:
+            "https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white",
+        },
+        {
+          skill: "Django",
+          src:
+            "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        },
+        {
+          skill: "Node.js",
+          src:
+            "https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js",
+        },
+        {
+          skill: "ReactJS",
+          src:
+            "https://img.shields.io/badge/-React-05122A?style=flat&logo=react",
+        },
+        {
+          skill: "Express",
+          src:
+            "https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=flat",
+        },
+      ],
+      Others: [
+        {
+          skill: "Git",
+          src: "https://img.shields.io/badge/-Git-05122A?style=flat&logo=git",
+        },
+        {
+          skill: "Nginx",
+          src:
+            "https://img.shields.io/badge/nginx%20-%23009639.svg?&style=flat&logo=nginx&logoColor=white",
+        },
+        {
+          skill: "Docker",
+          src:
+            "https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=flat&logo=docker&logoColor=white",
+        },
+        {
+          skill: "AWS",
+          src:
+            "https://img.shields.io/badge/AWS%20-%23FF9900.svg?&style=flat&logo=amazon-aws&logoColor=white",
+        },
+      ],
+    },
   },
   education: [
     // {
@@ -71,15 +254,18 @@ let resumeData = {
   experience: [
     {
       CompanyName: "Hewlett Packard Enterprise",
-      Designation: "Research and Development Engineer",
+      Designation: "Software Engineer",
       UnitName: "Aruba Networks, HPE R&D",
       From: "July 2019",
       To: "Present",
       Description: "Web Development, Data Mining, Automation",
       Points: [
-        "Independently working on Tool Development and Data Mining to build intelligent applications that help improve engineering productivity. Created a dataset to characterize over 1200+ Network Stress Test Cases and developed a Smart Triage and Test Execution Tool - reducing manual effort of the Triage Team by 50%.",
-        "Developed the Aruba Bangalore Lab Reservation Tool working alongside a teammate. Features include Network Auto-Discovery, Inventory Control, Utilization Analytics and Stats, remote authentication using LDAP, etc. Tech Stack: Python, ReactJS, NodeJS MongoDB, scikit-learn.",
-        "Worked with a team of two members to build a Health Monitor for Aruba Switch Builds. Also, mentoring five Interns at Aruba Networks, HPE.",
+        "Analysed test execution data to identify bottlenecks which led to a 25% increase in sanity and regression test coverage.",
+        "Designed and developed a MERN web app to assist in triage and reporting which reduced the manual effort of the triage team by 50%.",
+        "Case studies on Network Classification for inferring network behavior using gradient boosted trees on the NIMS dataset.",
+        "Developed a lab reservation tool to help manage 8000+ networking devices. Features - remote authentication with LDAP/ SSO, Network Auto-Discovery using REST/SNMP, Utilization Statistics, etc.",
+        "Worked with a team of two members to build a Health Monitor for Aruba Switch Builds.",
+        "Mentored five Interns at Aruba Networks, HPE.",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },
@@ -91,7 +277,8 @@ let resumeData = {
       To: "July 2019",
       Description: "Web Development, Data Mining, Automation",
       Points: [
-        "Worked on Automation of Network Switching Protocols such as OSPF, ARP, MAC, etc. Built a library to automate reporting of ARP Scale Characterization, reducing the manual effort that goes into generating it.",
+        "Developed a library to help with data analysis and reporting of ARP Scale Characterization, eliminating the manual effort in generating it.",
+        "Automation of Switching Protocols such as ARP, OSPF, VRRP, etc.",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },
@@ -104,7 +291,9 @@ let resumeData = {
       Description:
         "Applied Machine Learning, Deep Learning, Automatic Speech Recognition",
       Points: [
-        "PES University, Bangalore. Worked on applied Deep Learning in Automatic Speech Recognition for the language Kannada. Focused on syllable segmentation, mispronunciation detection using Self-Organizing Maps and rating the word pronunciation using deep learning architectures.",
+        "Project Kannada Kali - Speech Recognition for the language Kannada.",
+        "Training and deployment of deep learning architectures to rate word pronunciation using acoustic features like MFCCs and spectrograms.",
+        "Used self-similarity matrix on spectral features for syllable segmentation, and Self-Organizing Maps for mispronunciation detection.",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },
@@ -116,7 +305,8 @@ let resumeData = {
       To: "Jan 2019",
       Description: "Applied Machine Learning, Pattern Recognition",
       Points: [
-        "PES University, Bangalore.Worked on projects on Face Recognition under guidance Prof. Vinay A, funded by the Govt. of Karnataka. Explored Classication using SVM, Random Forests, Gradient Boosting, and ResNet.",
+        "Worked on projects on Face Recognition under guidance Prof. Vinay A, funded by the Govt. of Karnataka.",
+        "Explored Image Classification using SVM, Random Forests, Gradient Boosting, and CNN architectures such as ResNet, Inception, etc.",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },
@@ -154,34 +344,58 @@ let resumeData = {
     //   url: "",
     //   tech: ["Python", "Docker", "Kafka", "PostgreSQL"],
     // },
-    {
-      id: 8,
-      title: "Data Modeling with Cassandra",
-      abstract:
-        "An ETL pipeline using Python and data modeling with Apache Cassandra. Created an Apache Cassandra database which can create queries on song play data to answer the questions on the user activity on the app.",
-      url: "https://github.com/aditya-bhat/Data-Modeling-with-Cassandra",
-      tech: ["Python", "Apache Cassandra"],
-    },
+    // {
+    //   id: 9,
+    //   title: "Redshift Data Warehouse",
+    //   abstract:
+    //     "An ETL pipeline that extracts data (JSON logs) on user activity from S3, stages them in Redshift, and transforms data into a set of dimensional tables for the analytics team to continue finding insights in what songs users are listening to.",
+    //   url: "https://github.com/aditya-bhat/Redshift-Data-Warehouse",
+    //   tech: ["Python", "PostgreSQL", "Redshift", "AWS"],
+    // },
+    // {
+    //   id: 8,
+    //   title: "Data Modeling with Cassandra",
+    //   abstract:
+    //     "An ETL pipeline using Python and data modeling with Apache Cassandra. Created an Apache Cassandra database which can create queries on song play data to answer the questions on the user activity on the app.",
+    //   url: "https://github.com/aditya-bhat/Data-Modeling-with-Cassandra",
+    //   tech: ["Python", "Apache Cassandra"],
+    // },
+    // {
+    //   id: 7,
+    //   title: "Data Modeling with Postgres",
+    //   abstract:
+    //     "An ETL pipeline using Python. Defined the fact and dimension tables for a star schema for a particular analytic focus, and wrote an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.",
+    //   url: "https://github.com/aditya-bhat/Data-Modeling-with-Postgres",
+    //   tech: ["Python", "PostgreSQL"],
+    // },
     {
       id: 7,
-      title: "Data Modeling with Postgres",
+      title: "Stack OverFlow AutoTagger",
       abstract:
-        "An ETL pipeline using Python. Defined the fact and dimension tables for a star schema for a particular analytic focus, and wrote an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.",
-      url: "https://github.com/aditya-bhat/Data-Modeling-with-Postgres",
-      tech: ["Python", "PostgreSQL"],
+        "Automatic Tagging for StackOverflow questions using Machine Learning and NLP.",
+      url: "https://github.com/aditya-bhat/stack-overflow-auto-tagger",
+      tech: [
+        "Python",
+        "Numpy",
+        "Pandas",
+        "SpaCy",
+        "NLTK",
+        "scikit-learn",
+        "TensorFlow",
+        "Keras",
+      ],
     },
     {
       id: 6,
-      title:
-        "LegoNet - Classification and Extractive Summarization of Indian legal judgments",
+      title: "LegoNet",
       abstract:
-        "Developed an NLP system working in a team of three, to classify andsummarize Indian Legal Judgments using Deep Learning. Focused onSentence-Paragraph level encoding, Capsule Networks for Text Clas-sification and Unsupervised Text Summarization.Presented Paper atInternational Symposium - LKE 2019, Dublin, Ireland.",
+        "An NLP system to classify and summarize Indian Legal Judgments using Sentence level encoding, Capsule Networks and Unsupervised Text Summarization",
       url: "",
       tech: ["Python", "Numpy", "Pandas", "TensorFlow", "Keras", "PHP"],
     },
     {
       id: 5,
-      title: "Modular implementation of a Deep Neural Net from scratch",
+      title: "Modular Deep Neural Net from scratch",
       abstract:
         "Keras style modular implementation of a DNN with layers for Dense, Reshape, Activations, optimizers like SGD, Adam, etc. and loss func-tions like MSE, and cross entropy.",
       url: "",

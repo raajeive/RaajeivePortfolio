@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Footer = (props) => {
+const TechStack = (props) => {
   const data = props.tech;
   const classes = useStyles();
 
@@ -25,27 +25,26 @@ const Footer = (props) => {
     <Box className={classes.root} id="skills">
       <ul
         style={{
-          padding: "0px",
+          paddingInline: "2rem",
         }}
       >
-        {data.map((item) => (
-          <Button
+        {data.map((item, index) => (
+          <li
             style={{
               margin: "5px",
+              fontSize: "small",
               backgroundColor: "#343a40",
               color: "white",
+              borderRadius: "10em",
             }}
-            variant="contained"
-            color="primary"
-            size="small"
-            disabled={true}
+            key={index}
           >
             {item}
-          </Button>
+          </li>
         ))}
       </ul>
     </Box>
   );
 };
 
-export default Footer;
+export default TechStack;

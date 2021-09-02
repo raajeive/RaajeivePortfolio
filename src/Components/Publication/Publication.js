@@ -46,9 +46,9 @@ const Publication = (props) => {
     <Box id="publication">
       <Paper className={classes.paper} elevation={0}>
         <Typography variant="h2" style={{ fontFamily: "Trocchi" }}>
-          Publications:
+          Publications
         </Typography>
-        <Grid container justify="left" spacing={2}>
+        <Grid container justify="flex-start" spacing={2}>
           {publicationData.map((publication) => (
             <Grid
               style={{

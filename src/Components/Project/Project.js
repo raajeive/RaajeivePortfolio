@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     background: "linear-gradient(to right, #D7DDE8, #757F9A)",
     // minHeight: "100vh",
     display: "flex",
+    flexGrow: 1,
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
@@ -35,9 +36,18 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   card: {
-    minHeight: "30vh",
+    minHeight: "400px",
+    flexGrow: 1,
+    // background: "rgb(23, 42, 69)",
     // maxHeight: "35vh",
     // overflowY: "scroll",
+  },
+  faButton: {
+    padding: "0px",
+    color: "black",
+    fontSize: "40px",
+    textDecoration: "none",
+    "&:hover": { color: "steelblue" },
   },
 }));
 
@@ -68,75 +78,65 @@ const Project = (props) => {
             fontFamily: "Trocchi",
           }}
         >
-          Projects:
+          Projects
         </Typography>
-        <Grid container justify="center" spacing={2} alignItems="stretch">
+        <Grid
+          style={{ padding: "10px", paddingInline: "10%" }}
+          container
+          justify="center"
+          spacing={2}
+        >
           {projectData.map((project) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={6}
-              lg={4}
-              xl={3}
-              justify="center"
-              style={{ height: "100%" }}
-              key={project.id}
-            >
+            <Grid item xs={12} sm={6} md={6} lg={4} xl={3} key={project.id}>
               <Box style={{ height: "100%" }} key={project.id}>
-                <Card className={classes.card}>
-                  <CardContent>
-                    <Typography
-                      variant="h6"
-                      style={{
-                        fontWeight: 700,
-                        fontStyle: "italic",
-                        fontSize: "large",
-                        marginTop: "5px",
-                        marginBottom: "5px",
-                      }}
-                    >
-                      {project.title}
-                    </Typography>
-                    <TechStack tech={project.tech}></TechStack>
-                  </CardContent>
-                  <CardActions className={classes.actions}>
-                    <Button
-                      onClick={() => {
-                        setData(project);
-                        setOpen(true);
-                      }}
+                <Paper style={{ height: "100%" }}>
+                  <Typography
+                    variant="h6"
+                    style={{
+                      fontWeight: 700,
+                      // fontStyle: "italic",
+                      fontSize: "large",
+                      fontFamily:
+                        "Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif",
+                      // marginTop: "5px",
+                      // margin: "2rem 0px 10px",
+                      padding: "0.75rem 0.75rem 0rem 0.75rem",
+                    }}
+                  >
+                    {project.title}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    style={{
+                      fontWeight: 400,
+                      fontStyle: "italic",
+                      fontFamily:
+                        "Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif",
+                      fontSize: "medium",
+                      letterSpacing: "0.0001em",
+                      margin: "10px 5px 10px",
+                      paddingInline: "2rem",
+                      textAlign: "center",
+                    }}
+                  >
+                    {project.abstract}
+                  </Typography>
+                  {project.url != "" ? (
+                    <IconButton
                       target="_blank"
-                      size="small"
-                      variant="outlined"
-                      color="primary"
-                      style={
-                        {
-                          // backgroundColor: "#343a40",
-                          // color: "white",
-                        }
-                      }
+                      href={project.url}
+                      size="medium"
+                      className={classes.faButton}
                     >
-                      More INFO
-                    </Button>
-                    {project.url != "" ? (
-                      <IconButton
-                        target="_blank"
-                        href={project.url}
-                        size="medium"
-                      >
-                        <FaGithub
-                          href="#"
-                          color="black"
-                          padding="5px 5px"
-                          fontSize="40px"
-                        ></FaGithub>
-                      </IconButton>
-                    ) : (
-                      ""
-                    )}
-                  </CardActions>
-                </Card>
+                      <FaGithub href="#"></FaGithub>
+                    </IconButton>
+                  ) : (
+                    ""
+                  )}
+                  <div style={{ marginTop: "auto" }}>
+                    <TechStack tech={project.tech}></TechStack>
+                  </div>
+                </Paper>
               </Box>
             </Grid>
           ))}

@@ -38,13 +38,27 @@ const useStyles = makeStyles((theme) => ({
     padding: "14px 28px",
     fontSize: "16px",
     cursor: "pointer",
-    "&:hover": { color: "black", border: "1px solid black" },
+    "&:hover": {
+      color: "black",
+      backgroundColor: "darkseagreen",
+      border: "1px solid black",
+    },
   },
   faButton: {
     color: "white",
     padding: "5px 5px",
     fontSize: "40px",
     "&:hover": { color: "black" },
+  },
+  headTypography: {
+    fontWeight: "300",
+    lineHeight: 1.2,
+    color: "white",
+    fontFamily:
+      "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif",
+    margin: 0,
+    marginTop: "40px",
+    padding: "0px 0px 6px 0px",
   },
 }));
 
@@ -117,13 +131,13 @@ const Home = (props) => {
   return (
     <Box id="home">
       <Box className={classes.root}>
-        <Typography className={classes.Typography} variant="h1">
-          {about.name}
+        <Typography className={classes.headTypography} variant="h4">
+          Hi there 👋, I'm {about.name}
         </Typography>
-        <Typography className={classes.Typography} variant="h4">
+        <Typography className={classes.Typography} variant="h5">
           {about.role} @{about.currentCompany}
         </Typography>
-        <Typography className={classes.Typography} variant="h4">
+        <Typography className={classes.Typography} variant="h5">
           <span style={{ visibility: "hidden" }}>!</span>
           <span
             className="txt-rotate"

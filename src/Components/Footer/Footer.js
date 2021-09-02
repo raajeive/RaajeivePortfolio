@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FaCode, FaReact, FaStar, FaArrowAltCircleUp } from "react-icons/fa";
+import {
+  FaCode,
+  FaReact,
+  FaStar,
+  FaArrowAltCircleUp,
+  FaHeart,
+} from "react-icons/fa";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { Box, Typography, Button } from "@material-ui/core";
@@ -70,13 +76,14 @@ const Footer = (props) => {
           }}
         >
           {message} Please feel free to email me at:{" "}
-          <a
-            className={classes.button}
-            rel="noopener"
-            href={social_links.email}
-            aria-label="My Email"
-          >
-            {social_links.email.replace("mailto:", "")}
+          <a href={social_links.email}>
+            <img
+              src={
+                "https://img.shields.io/badge/-" +
+                social_links.email.replace("mailto:", "") +
+                "-494949?style=flat&logo=Gmail&logoColor=white"
+              }
+            />
           </a>
         </Typography>
       </div>
@@ -89,7 +96,8 @@ const Footer = (props) => {
         Copyright 2020
       </div>
       <div>
-        <FaCode size={25} className="react-icons"></FaCode>
+        <FaCode size={25} className="react-icons"></FaCode> with{" "}
+        <FaHeart size={25} className="react-heart-icon"></FaHeart>
         by{" "}
         <a
           className={classes.button}
