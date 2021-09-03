@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Button, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { MdFileDownload } from "react-icons/md";
-import profileImage from "../../PortfolioData/profile.png";
+import profileImage from "../../PortfolioData/profile.jpg";
 import Skills from "../Skills/Skills";
 import Courses from "../Courses/Courses";
 import Achievements from "../Achievements/Achievements";

@@ -81,7 +81,7 @@ export default function DenseAppBar() {
                 myScrollFunc("home");
               }}
             >
-              Aditya
+              Raajeive
             </span>
             <span>{">"}</span>
           </Button>

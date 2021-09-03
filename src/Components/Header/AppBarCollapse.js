@@ -83,14 +83,6 @@ const AppBarCollapse = (props) => (
       >
         About
       </Button>
-      {/* <Button
-        className={props.classes.Button}
-        onClick={() => {
-          myScrollFunc("education");
-        }}
-      >
-        Education
-      </Button> */}
       <Button
         className={props.classes.Button}
         onClick={() => {
@@ -100,6 +92,14 @@ const AppBarCollapse = (props) => (
         Experience
       </Button>
       <Button
+        className={props.classes.Button}
+        onClick={() => {
+          myScrollFunc("education");
+        }}
+      >
+        Education
+      </Button>
+      {/* <Button
         className={props.classes.Button}
         onClick={() => {
           myScrollFunc("project");
@@ -114,7 +114,7 @@ const AppBarCollapse = (props) => (
         }}
       >
         Publications
-      </Button>
+      </Button> */}
       {/* <Button className={props.classes.Button}>Skills</Button> */}
     </div>
   </div>

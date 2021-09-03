@@ -42,92 +42,96 @@ const useStyles = makeStyles((theme) => ({
 const Publication = (props) => {
   const classes = useStyles();
   const publicationData = props.publication;
-  return (
-    <Box id="publication">
-      <Paper className={classes.paper} elevation={0}>
-        <Typography variant="h2" style={{ fontFamily: "Trocchi" }}>
-          Publications
-        </Typography>
-        <Grid container justify="flex-start" spacing={2}>
-          {publicationData.map((publication) => (
-            <Grid
-              style={{
-                marginInline: "10%",
-              }}
-              item
-              xs={12}
-              key={publication.id}
-            >
-              <List
+  if (publicationData.length == 0) {
+    return null;
+  } else {
+    return (
+      <Box id="publication">
+        <Paper className={classes.paper} elevation={0}>
+          <Typography variant="h2" style={{ fontFamily: "Trocchi" }}>
+            Publications
+          </Typography>
+          <Grid container justify="flex-start" spacing={2}>
+            {publicationData.map((publication) => (
+              <Grid
                 style={{
-                  textAlign: "left",
-                  width: "100%",
-                  padding: "0px",
+                  marginInline: "10%",
                 }}
+                item
+                xs={12}
+                key={publication.id}
               >
-                <ListItem style={{ margin: "0px", padding: "0px" }}>
-                  <ListItemText
-                    primary={
-                      <Typography
-                        variant="h6"
-                        style={{ padding: "0px", fontFamily: "Lato" }}
-                      >
-                        {publication.title}
-                      </Typography>
-                    }
-                    secondary={
-                      <React.Fragment>
-                        <Typography
-                          component="span"
-                          variant="body2"
-                          color="textPrimary"
-                        >
-                          {publication.publisher}
-                        </Typography>
-                        {" -    " + publication.authors.join(", ")}
-                      </React.Fragment>
-                    }
-                  />
-                </ListItem>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  target="_blank"
-                  href={publication.url}
-                  size="small"
-                  style={{ marginLeft: "15px", marginBottom: "5px" }}
+                <List
+                  style={{
+                    textAlign: "left",
+                    width: "100%",
+                    padding: "0px",
+                  }}
                 >
-                  Details
-                </Button>
-                {publication.file_location &&
-                publication.file_location !== "" ? (
-                  <Link
-                    style={{ textDecoration: "none", color: "white" }}
-                    to={publication.file_location}
+                  <ListItem style={{ margin: "0px", padding: "0px" }}>
+                    <ListItemText
+                      primary={
+                        <Typography
+                          variant="h6"
+                          style={{ padding: "0px", fontFamily: "Lato" }}
+                        >
+                          {publication.title}
+                        </Typography>
+                      }
+                      secondary={
+                        <React.Fragment>
+                          <Typography
+                            component="span"
+                            variant="body2"
+                            color="textPrimary"
+                          >
+                            {publication.publisher}
+                          </Typography>
+                          {" -    " + publication.authors.join(", ")}
+                        </React.Fragment>
+                      }
+                    />
+                  </ListItem>
+                  <Button
+                    variant="contained"
+                    color="primary"
                     target="_blank"
-                    download
+                    href={publication.url}
+                    size="small"
+                    style={{ marginLeft: "15px", marginBottom: "5px" }}
                   >
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      size="small"
-                      style={{ marginLeft: "5px", marginBottom: "5px" }}
+                    Details
+                  </Button>
+                  {publication.file_location &&
+                  publication.file_location !== "" ? (
+                    <Link
+                      style={{ textDecoration: "none", color: "white" }}
+                      to={publication.file_location}
+                      target="_blank"
+                      download
                     >
-                      PDF
-                    </Button>
-                  </Link>
-                ) : (
-                  ""
-                )}
-                <Divider component="li"></Divider>
-              </List>
-              {/* </Paper> */}
-            </Grid>
-          ))}
-        </Grid>
-      </Paper>
-    </Box>
-  );
+                      <Button
+                        variant="contained"
+                        color="primary"
+                        size="small"
+                        style={{ marginLeft: "5px", marginBottom: "5px" }}
+                      >
+                        PDF
+                      </Button>
+                    </Link>
+                  ) : (
+                    ""
+                  )}
+                  <Divider component="li"></Divider>
+                </List>
+                {/* </Paper> */}
+              </Grid>
+            ))}
+          </Grid>
+        </Paper>
+      </Box>
+    );
+  }
 };
 
 export default Publication;

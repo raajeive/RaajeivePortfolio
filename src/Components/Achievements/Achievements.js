@@ -38,78 +38,82 @@ const useStyles = makeStyles((theme) => ({
 const Achievements = (props) => {
   const classes = useStyles();
 
-  return (
-    <Box className={classes.root} id="courses">
-      <Typography
-        variant="h4"
-        style={{
-          fontFamily: "Trocchi",
-        }}
-      >
-        Achievements
-      </Typography>
-      <hr
-        style={{
-          width: "50%",
-          marginTop: "0px",
-          marginBottom: "0px",
-          paddingTop: "0px",
-          opacity: "0.6",
-        }}
-      ></hr>
-      <Box className={classes.divAchievements}>
-        <List
+  if (props.achievements.length == 0) {
+    return null;
+  } else {
+    return (
+      <Box className={classes.root} id="courses">
+        <Typography
+          variant="h4"
           style={{
-            textAlign: "left",
-            width: "100%",
-            padding: "0px",
+            fontFamily: "Trocchi",
           }}
         >
-          {props.achievements.map((achievement, index) => {
-            return (
-              <div key={index}>
-                <ListItem
-                  alignItems="flex-start"
-                  style={{ margin: "0px", padding: "0px" }}
-                >
-                  {/* <ListItemIcon>
+          Achievements
+        </Typography>
+        <hr
+          style={{
+            width: "50%",
+            marginTop: "0px",
+            marginBottom: "0px",
+            paddingTop: "0px",
+            opacity: "0.6",
+          }}
+        ></hr>
+        <Box className={classes.divAchievements}>
+          <List
+            style={{
+              textAlign: "left",
+              width: "100%",
+              padding: "0px",
+            }}
+          >
+            {props.achievements.map((achievement, index) => {
+              return (
+                <div key={index}>
+                  <ListItem
+                    alignItems="flex-start"
+                    style={{ margin: "0px", padding: "0px" }}
+                  >
+                    {/* <ListItemIcon>
                     <FiberManualRecordIcon fontSize="small" />
                   </ListItemIcon> */}
-                  <ListItemText
-                    primary={
-                      <Typography
-                        variant="h6"
-                        style={{ padding: "0px", fontFamily: "Lato" }}
-                      >
-                        {achievement.award +
-                          " -    " +
-                          achievement.org +
-                          "  (" +
-                          achievement.date +
-                          ")"}
-                      </Typography>
-                    }
-                    secondary={
-                      <React.Fragment>
+                    <ListItemText
+                      primary={
                         <Typography
-                          component="span"
-                          variant="body2"
-                          color="textPrimary"
+                          variant="h6"
+                          style={{ padding: "0px", fontFamily: "Lato" }}
                         >
-                          {achievement.description}
+                          {achievement.award +
+                            " -    " +
+                            achievement.org +
+                            "  (" +
+                            achievement.date +
+                            ")"}
                         </Typography>
-                        <Divider></Divider>
-                      </React.Fragment>
-                    }
-                  />
-                </ListItem>
-              </div>
-            );
-          })}
-        </List>
+                      }
+                      secondary={
+                        <React.Fragment>
+                          <Typography
+                            component="span"
+                            variant="body2"
+                            color="textPrimary"
+                          >
+                            {achievement.description}
+                          </Typography>
+                          <Divider></Divider>
+                        </React.Fragment>
+                      }
+                    />
+                  </ListItem>
+                </div>
+              );
+            })}
+          </List>
+        </Box>
       </Box>
-    </Box>
-  );
+    );
+  }
 };
 
 export default Achievements;
