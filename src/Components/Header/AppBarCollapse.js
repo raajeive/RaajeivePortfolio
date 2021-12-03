@@ -58,7 +58,7 @@ const AppBarCollapse = (props) => (
       >
         Education
       </MenuItem>
-      <MenuItem
+      {/* <MenuItem
         onClick={() => {
           myScrollFunc("project");
         }}
@@ -71,7 +71,7 @@ const AppBarCollapse = (props) => (
         }}
       >
         Publications
-      </MenuItem>
+      </MenuItem> */}
     </ButtonAppBarCollapse>
     <div className={props.classes.buttonBar} id="appbar-collapse">
       <Button
@@ -114,8 +114,15 @@ const AppBarCollapse = (props) => (
         }}
       >
         Publications
+      </Button>
+      <Button
+        className={props.classes.Button}
+        onClick={() => {
+          myScrollFunc("skills");
+        }}
+      >
+        Skills
       </Button> */}
-      {/* <Button className={props.classes.Button}>Skills</Button> */}
     </div>
   </div>
 );

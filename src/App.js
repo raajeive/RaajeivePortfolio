@@ -10,10 +10,8 @@ function App() {
   document.title = portfolioData.about.name;
   return (
     <div className="App">
-      {/* <Switch> */}
       <ScrollUpButton />
       <Header className="App-header"></Header>
-      {/* </Switch> */}
       <Main portfolioData={portfolioData}></Main>
       <Footer
         link={portfolioData.about.socialLinks.github}

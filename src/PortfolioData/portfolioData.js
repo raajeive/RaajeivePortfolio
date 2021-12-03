@@ -48,7 +48,11 @@ let resumeData = {
     skills: {
       "Programming Languages": [
         {
-          skill: "C/C++",
+          skill: "C",
+          src: "https://img.shields.io/badge/-C-05122A?style=flat&logo=C&logoColor=00599C%22",
+        },
+        {
+          skill: "C++",
           src: "https://img.shields.io/badge/-C++-05122A?style=flat&logo=C%2B%2B&logoColor=00599C",
         },
         {
@@ -112,14 +116,14 @@ let resumeData = {
           skill: "MongoDB",
           src: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=flat&logo=mongodb&logoColor=white",
         },
-        // {
-        //   skill: "MySQL",
-        //   src: "https://img.shields.io/badge/mysql-%2300f.svg?&style=flat&logo=mysql&logoColor=white",
-        // },
-        // {
-        //   skill: "PostgreSQL",
-        //   src: "https://img.shields.io/badge/postgres-%23316192.svg?&style=flat&logo=postgresql&logoColor=white",
-        // },
+        {
+          skill: "MySQL",
+          src: "https://img.shields.io/badge/mysql-%2300f.svg?&style=flat&logo=mysql&logoColor=white",
+        },
+        {
+          skill: "PostgreSQL",
+          src: "https://img.shields.io/badge/postgresql-%23316192.svg?&style=flat&logo=postgresql&logoColor=white",
+        },
       ],
       "Web Technologies": [
         {
@@ -150,7 +154,7 @@ let resumeData = {
         },
         {
           skill: "JIRA",
-          src: "https://img.shields.io/badge/-JIRA-black?logo=jira&logoColor=blue&style=flat",
+          src: "https://img.shields.io/badge/-JIRA-black?logo=jira-software&logoColor=blue&style=flat",
         },
       ],
     },
@@ -180,6 +184,7 @@ let resumeData = {
         "Involved in the development of Triage Tool, which reduced the manual efforts in triage and reporting of automated test executions using MERN web stack.",
         "Involved in developing Boot Characterisation scripts which helped in identifying critical issues in low-end Aruba Switches.",
         "Helped in automation of various port-access security features involving Dot1x and Mac Authentication.",
+        "Involved in developing a networking daemon health monitor to help baseline and analyse behaviour of L3 protocols such as OSPF and BGP in Aruba Switch builds using Python.",
         "Developed Feature Parity Checker using python for check-in analysis in Jenkins to prevent incorrect check-ins.",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
@@ -194,7 +199,7 @@ let resumeData = {
       Points: [
         "Developed web tool to generate AOS-CX configuration commands for a given AOS configuration commands using Flask and Python.",
         "Involved in developing python libraries for automation of ARP, OSPF and BGP protocols.",
-        "Involved in feature testing, system testing and regression testing on VSF & VSX environments for various port-access security features of Aruba switches.",
+        "Involved in Automation testing of various L2 and L3 networking protocols such as ARP, ERPS, OSPF and Security Features using Python and Automation Test Framework",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },
