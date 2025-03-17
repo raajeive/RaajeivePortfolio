@@ -84,7 +84,9 @@ const About = (props) => {
             style={{ height: "175px", width: "175px", borderRadius: "50%" }}
           />
           <h3 style={{ padding: "10px", margin: "5px" }} align="center">
-            {aboutme}
+            {aboutme.join("\n").split("\n").map((line, index) => (
+              <p key={index} style={{ margin: "5px 0" }} dangerouslySetInnerHTML={{ __html: line }} />
+            ))}
           </h3>
           <Link
             style={{ textDecoration: "none", color: "black" }}

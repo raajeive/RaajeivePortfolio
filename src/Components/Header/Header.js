@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Button: {
     fontWeight: "bold",
-    color: "white",
+    color: "black",
   },
 }));
 

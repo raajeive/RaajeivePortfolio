@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   Typography: {
     fontWeight: "300",
     lineHeight: 1.2,
-    color: "white",
+    color: "black",
     fontFamily:
       "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif",
     margin: 0,
@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     width: 100,
   },
   button: {
-    color: "white",
-    border: "1px solid white",
+    color: "black",
+    border: "1px solid black",
     padding: "14px 28px",
     fontSize: "16px",
     cursor: "pointer",
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   faButton: {
-    color: "white",
+    color: "black",
     padding: "5px 5px",
     fontSize: "40px",
     "&:hover": { color: "black" },
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   headTypography: {
     fontWeight: "300",
     lineHeight: 1.2,
-    color: "white",
+    color: "black",
     fontFamily:
       "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif",
     margin: 0,

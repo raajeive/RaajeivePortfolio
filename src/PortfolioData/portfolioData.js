@@ -3,27 +3,25 @@ let resumeData = {
     imagebaseurl: "https://raajeive.github.io/",
     resume_file_location: "/files/Raajeive_K_Resume.pdf",
     name: "Raajeive K",
-    role: "Software Engineer",
-    currentCompany: "Hewlett Packard Enterprise",
+    role: "Senior Software Engineer",
+    currentCompany: "Oracle",
     socialLinks: {
       email: "mailto:raajeivemsk@gmail.com",
       linkedin: "https://www.linkedin.com/in/raajeive/",
       github: "https://github.com/raajeive",
       instagram: "https://www.instagram.com/raajeive/",
     },
-    aboutDataRotate: '["Automation", "Computer Networking", "Web Developer"]',
-    aboutme:
-      "Hi there 👋, I'm a Enthusiastic and quick-learning Software Engineer\
-      currently working at Aruba - Hewlett Packard Enterprise R&D. Having 2+ years\
-      of experience in participating web tool development\
-      and automation testing of large-scale Linux based software product.\
-      Proven ability to Design, Develop, Scale, and Maintain applications that\
-      improve Engineering productivity and Automation.",
+    aboutDataRotate: '["Software Development", "Machine Learning", "High-Performance"]',
+    aboutme: [
+      "👋 Hi, I’m <b>Raajeive K</b>, a Software Engineer at <b>Oracle Cloud Infrastructure (OCI)</b>, building <b>high-performance</b> cloud solutions that improve engineering productivity.",
+      "With <b>5+ years</b> of experience in <b>distributed systems</b>, <b>microservices</b>, and <b>cloud infrastructure</b>, I specialize in <b>backend development</b> and <b>performance optimization</b> for large-scale systems.",
+      "Beyond work, I’m passionate about <b>Machine Learning</b>, <b>NLP</b>, and <b>Data Mining</b>, constantly exploring new technologies to push boundaries."
+    ],
     address: "Bangalore, India",
     website: "https://raajeive.github.io/",
     interests: "NLP, Machine Learning, Data Mining, Web Technologies",
     getInTouchMessage:
-      "I'm open to opportunities in the area of Software Development, Automation and Computer Networking",
+      "I'm open to opportunities in the area of Software Development, Machine Learning and High-Performance",
     courses: {
       // "Degree-course-college": [
       //   "CS101 - Intro to computing using Python",
@@ -63,6 +61,10 @@ let resumeData = {
           skill: "JavaScript",
           src: "https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript",
         },
+        {
+          "skill": "Java",
+          "src": "https://img.shields.io/badge/-Java-red?style=flat&logo=java&logoColor=black"
+        } 
       ],
       // "Data Science/Machine Learning": [
       //   {
@@ -130,10 +132,10 @@ let resumeData = {
           skill: "Flask",
           src: "https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white",
         },
-        // {
-        //   skill: "Django",
-        //   src: "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
-        // },
+        {
+          skill: "Django",
+          src: "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
+        },
         {
           skill: "Node.js",
           src: "https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js",
@@ -156,6 +158,18 @@ let resumeData = {
           skill: "JIRA",
           src: "https://img.shields.io/badge/-JIRA-black?logo=jira-software&logoColor=blue&style=flat",
         },
+        {
+          skill: "Nginx",
+          src: "https://img.shields.io/badge/nginx%20-%23009639.svg?&style=flat&logo=nginx&logoColor=white",
+        },
+        {
+          skill: "Docker",
+          src: "https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=flat&logo=docker&logoColor=white",
+        },
+        {
+          skill: "OCI",
+          src: "https://img.shields.io/badge/OCI-red?style=flat&logo=oracle",
+        }
       ],
     },
   },
@@ -172,20 +186,57 @@ let resumeData = {
   ],
   experience: [
     {
+      CompanyName: "Oracle",
+      Designation: "Senior Member of Technical Staff",
+      UnitName: "Oracle Cloud Infrastructure (OCI)",
+      From: "September 2024",
+      To: "Present",
+      Description: "Software Development, Distributed Systems, Microservices",
+      Points: [
+        "Developed a real-time RoT monitoring solution in Cerebro, reducing failure detection time from 24 hours to 30 minutes, enabling faster corrective actions and improving system reliability",
+        "Developed a backup health monitoring system for SmartNICs in Cerebro, reducing unhealthy card identification time from 20 minutes to under 1 minute during LSE events when telemetry is unavailable."
+      ],
+      Achievements: ["Some Achievements1", "Some Achievements 2"],
+    },
+    {
+      CompanyName: "Oracle",
+      Designation: "Member of Technical Staff",
+      UnitName: "Oracle Cloud Infrastructure (OCI)",
+      From: "July 2022",
+      To: "August 2024",
+      Description: "Software Development, Distributed Systems, Microservices",
+      Points: [
+        "Worked on the development, maintenance, and operations of mission-critical services for the card-management team in the networking domain of Oracle Cloud Infrastructure.",
+        "Designed and integrated critical service quality metrics and KPIs for Cerebro (a SmartNIC inventory and monitoring service) into the CASE (Customer And Service Experience) dashboard, enabling executive-level insights and contributing to maintaining service availability at 99.9999%.",
+        "Analyzed and improved Cerebro’s SmartNIC monitoring by reducing the host poll period from 14 minutes to under 5 minutes in large-scale regions, achieving a 65% faster failure detection time.",
+        "Designed and implemented an automated RoT troubleshooting system in Cerebro, reducing SmartNIC serial console troubleshooting time from ~1 hour to <5 minutes, accelerating repairs from days to hours."
+      ],
+      Achievements: ["Some Achievements1", "Some Achievements 2"],
+    },
+    {
       CompanyName: "Hewlett Packard Enterprise",
-      Designation: "Software Engineer",
+      Designation: "Software Engineer II",
+      UnitName: "Aruba Networks, HPE R&D",
+      From: "July 2021",
+      To: "July 2022",
+      Description: "Software Development, Computer Networking, Automation",
+      Points: [
+        "Collaborated on development of Triage and Reporting Tool using MERN (Mongo DB, Express, React JS and Node JS stack which helped in analysing the automated test execution results of 200K tests across different releases, different platforms and provide insights on the quality of the product.",
+        "Developed Feature Parity Checker using Python for check-in analysis in Jenkins to prevent incorrect check-ins.",
+      ],
+      Achievements: ["Some Achievements1", "Some Achievements 2"],
+    },
+    {
+      CompanyName: "Hewlett Packard Enterprise",
+      Designation: "Software Engineer I",
       UnitName: "Aruba Networks, HPE R&D",
       From: "July 2019",
-      To: "Present",
-      Description: "Web Development, Computer Networking, Automation",
+      To: "June 2021",
+      Description: "Software Development, Computer Networking, Automation",
       Points: [
-        "Involved in Design and Development of Aruba Bengaluru Lab Reservation Tool, which helped in managing 8000+ network devices. Features include - Network Auto-Discovery of switches using REST/SNMP, Utilization Statistics, etc.",
-        "Automated the evaluation of convergence time characteristics of L2 protocols such as STP, ERPS, and Loop Protect.",
-        "Involved in the development of Triage Tool, which reduced the manual efforts in triage and reporting of automated test executions using MERN web stack.",
-        "Involved in developing Boot Characterisation scripts which helped in identifying critical issues in low-end Aruba Switches.",
-        "Helped in automation of various port-access security features involving Dot1x and Mac Authentication.",
-        "Involved in developing a networking daemon health monitor to help baseline and analyse behaviour of L3 protocols such as OSPF and BGP in Aruba Switch builds using Python.",
-        "Developed Feature Parity Checker using python for check-in analysis in Jenkins to prevent incorrect check-ins.",
+        "Designed and Developed the Aruba Lab Reservation Tool using MERN (MongoDB, Express, React, Node.js) and Python, enabling the management of 80K+ network devices with automated email notifications via Python, Node.js, and SMTP. This resulted in a 200% increase in device utilization.",
+        "Implemented Network Auto-Discovery for switches using REST/SNMP, Node.js, and Python within the Reservation Tool, eliminating manual effort and achieving 100% automation of the inventory system, significantly improving efficiency and accuracy.",
+        "Collaborated on the development of Networking Daemon Health Monitor to help baseline and analyse behaviour of Networking protocols such as OSPF, BGP, STP, ERPS and Loop Protect in Aruba Switch builds using Python."
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },
@@ -195,11 +246,10 @@ let resumeData = {
       UnitName: "Aruba Networks, HPE R&D",
       From: "Jan 2019",
       To: "July 2019",
-      Description: "Web Development, Computer Networking, Automation",
+      Description: "Software Development, Computer Networking, Automation",
       Points: [
-        "Developed web tool to generate AOS-CX configuration commands for a given AOS configuration commands using Flask and Python.",
-        "Involved in developing python libraries for automation of ARP, OSPF and BGP protocols.",
-        "Involved in Automation testing of various L2 and L3 networking protocols such as ARP, ERPS, OSPF and Security Features using Python and Automation Test Framework",
+        "Designed and Developed a web tool using Flask, a Python-based framework, to translate AOS configurations into AOS-CX configurations.",
+        "Developed Boot Characterisation scripts which helped in identifying critical issues in low-end Aruba Switches using Python.",
       ],
       Achievements: ["Some Achievements1", "Some Achievements 2"],
     },

@@ -16,7 +16,7 @@ const styles = (theme) => ({
     width: "100%",
     background: "transparent",
   },
-  Button: { marginLeft: "10px", fontWeight: "bold", color: "white" },
+  Button: { marginLeft: "10px", fontWeight: "bold", color: "black" },
 });
 
 const myScrollFunc = function (ele) {
